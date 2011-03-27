@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<script>
+			function startHidden() {
+				var toolbars = safari.extension.bars;
+				for (var i=0; i<toolbars.length; i++) {
+					if (toolbars[i]['identifier'] == "hashrtoolbar") {
+						toolbars[i].hide();
+					}
+				}
+			}
+			
+			function toggleToolbar() {
+				var toolbars = safari.extension.bars;
+				for (var i=0; i<toolbars.length; i++) {
+					if (toolbars[i]['identifier'] == "hashrtoolbar") {
+						if (toolbars[i].visible) {
+							toolbars[i].hide();
+						}
+						else { toolbars[i].show(); }
+					}
+				}
+			}
+			safari.application.addEventListener("command", toggleToolbar, false);
+			startHidden();
+		</script>
+	</head>
+	
+	<body></body>
+	
+</html>

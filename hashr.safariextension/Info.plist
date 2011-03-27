@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Rogério Vicente</string>
+	<key>CFBundleDisplayName</key>
+	<string>hashr</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.rogeriopvl.hashr</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Bars</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>toolbar.html</string>
+				<key>Identifier</key>
+				<string>hashrtoolbar</string>
+				<key>Label</key>
+				<string>hashr</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>togglehashr</string>
+				<key>Identifier</key>
+				<string>togglehashr</string>
+				<key>Image</key>
+				<string>hashr.png</string>
+				<key>Label</key>
+				<string>togglehashr</string>
+				<key>Palette Label</key>
+				<string></string>
+				<key>Tool Tip</key>
+				<string>Show/hide hashr toolbar</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict/>
+		<key>Stylesheets</key>
+		<array>
+			<string>main.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Create hashes in more than 40 different algorithms.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>rogeriopvl.com</string>
+			</array>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://rogeriopvl.com/hashr</string>
+</dict>
+</plist>
